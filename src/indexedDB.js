@@ -50,7 +50,7 @@ function read(key) {
                cursor.continue();
             } else {
                 arr.sort((a,b) => a.roll - b.roll);
-                updateTableRender(true);           
+                updateTableRender(!tableRender);           
             }
          };
          return arr;

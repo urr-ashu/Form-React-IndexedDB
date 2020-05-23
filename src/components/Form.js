@@ -68,7 +68,7 @@ export default function MyForm(props){
 			 </div>
 			<br/>
 			<Button onClick={my} color="secondary" variant="outlined">
-				See Data
+				{tableRender ? "Hide Data" : "See data"}
 			</Button>
 			{
 				(tableRender === true) &&
